@@ -29,5 +29,30 @@ const metaMask_connect = () => {
         });
  };
  
+ 
+ // you should use async/await
+    async function jquery_button_clickfunction(){
+
+        // collect metamask function
+        let result = await metaMask_connect();
+
+        // display result based on result
+        console.log(result);
+    }
+    
+    
  // you need to call this function when frontend page is loaded or when user click Connect Metamask button
  
+ // response example
+     // {
+    //     "result": true,
+    //     "message": "success",
+    //     "walletaddress": "0x1e34d2b3ea6ef29652aa6f2e3bd493017bed0591"
+    // }
+    
+    // {
+    //     "result": false,
+    //     "message": "User rejected the request."
+    // }
+
+
