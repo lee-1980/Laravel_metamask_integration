@@ -9,7 +9,7 @@ const metaMask_connect = () => {
                 
                 await ethereum.request({
                     method: 'wallet_switchEthereumChain',
-                    params: [{chainId: '0x1'}],         
+                    params: [{chainId: '0x4'}],         
                 });
                 
                 const accounts = await ethereum.request({method: 'eth_requestAccounts'});
